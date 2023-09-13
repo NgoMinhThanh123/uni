@@ -1,0 +1,93 @@
+.forum {
+    text-align: center;
+}
+
+.forum-header{
+    display: flex;
+}
+
+.forum-btn{
+    margin-bottom: 10px;
+}
+
+.post-container{
+    margin-top: 10px;
+}
+
+.post-row{
+    margin-bottom: 5px;
+}
+
+.post-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-link h5{
+    margin-bottom: 0px;
+}
+
+.post-row p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.btn-search {
+    width: 150px;
+}
+.title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.inputTitle {
+    width: 70%;
+    height: 40px;
+    resize: vertical; 
+    vertical-align: top; 
+    word-wrap: break-word; 
+    margin-bottom: 5px;
+}
+
+.inputContent {
+    margin-right: 10px;
+    width: 70%;
+    height: 100px; 
+    resize: vertical; 
+    vertical-align: top; 
+    word-wrap: break-word; 
+}
+
+.btn-title {
+    margin: 30px 0px 0 10px;
+    vertical-align: middle;
+}
+
+/* Post detail*/
+.userDetail{
+    margin-top: 0;
+}
+.post-container {
+    border: 1px solid #ccc; /* Đường viền khung */
+    padding: 15px; /* Khoảng cách bên trong khung */
+    margin-bottom: 10px; /* Khoảng cách dưới cùng của mỗi khung */
+  }
+  
+  .postDetail {
+    font-size: 20px; /* Kích thước chữ cho tiêu đề bài viết */
+    font-weight: bold; /* Chữ in đậm cho tiêu đề bài viết */
+    margin: 0;
+  }
+  
+  /* CSS cho tiêu đề bình luận */
+  .comment-title {
+    font-size: 18px; /* Kích thước chữ cho tiêu đề bình luận */
+    margin-top: 20px; /* Khoảng cách phía trên tiêu đề bình luận */
+  }
+  
+  /* CSS cho các bình luận */
+  .comment {
+    border: 1px solid #ddd; /* Đường viền khung bình luận */
+    padding: 10px; /* Khoảng cách bên trong khung bình luận */
+    margin-top: 10px; /* Khoảng cách phía trên mỗi bình luận */
+  }

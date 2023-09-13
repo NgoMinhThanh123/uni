@@ -1,0 +1,44 @@
+.welcome{
+    text-align: center;
+    margin:  10px 0;
+}
+
+.contain {
+    background-color: #1d559f;
+    color: white;
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+}
+
+.view{
+    margin: 20px 0;
+}
+.footer-home {
+    display: flex;
+}
+
+
+.logo{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.seperate-black{
+    margin: 10px;
+    height: 10px;
+    color: black;
+}
+.seperate{
+    margin: 10px;
+    height: 3px;
+    color: rgb(242, 238, 238);
+}
+
+.introduce {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

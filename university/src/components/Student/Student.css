@@ -1,0 +1,42 @@
+.studentHome{
+    background-color: #ced3d6;
+    height: 90vh;
+    padding: 5px;
+}
+
+.select{
+    display: flex;
+    align-items: end;
+    margin: 10px ;
+}
+
+.semester{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.center{
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.btnSubmit {
+    margin-left: 20px;
+}
+
+.btnFile{
+    height: 50px;
+    margin: 10px;
+}
+
+.btnExport{
+    margin-right: 5px;
+}
+
+.btnExportPDF{
+    margin: 5px;
+}
+
+.whiteColor{color: white;}
+

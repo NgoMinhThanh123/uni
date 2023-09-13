@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.nmt_uni_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.nmt.model.ScoreColumn</class>
+    <class>com.nmt.model.Post</class>
+    <class>com.nmt.model.User</class>
+    <class>com.nmt.model.Classes</class>
+    <class>com.nmt.model.Semester</class>
+    <class>com.nmt.model.Score</class>
+    <class>com.nmt.model.SubjectSemester</class>
+    <class>com.nmt.model.Student</class>
+    <class>com.nmt.model.Lecturer</class>
+    <class>com.nmt.model.Subject</class>
+    <class>com.nmt.model.Faculty</class>
+    <class>com.nmt.model.StudentSubject</class>
+    <class>com.nmt.model.ScoreValue</class>
+    <class>com.nmt.model.LecturerSubject</class>
+    <class>com.nmt.model.ClassesSubject</class>
+    <class>com.nmt.model.Major</class>
+    <class>com.nmt.model.Comment</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Thanh@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>

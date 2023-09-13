@@ -1,0 +1,29 @@
+.score{
+    text-align: center;
+}
+
+.semester {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Sử dụng kích thước cố định cho các cột */
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    min-width: 100px; /* Đặt kích thước tối thiểu cho cột và hàng */
+}
+
+.score-table th {
+    background-color: #f2f2f2;
+}
+
+.score-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
