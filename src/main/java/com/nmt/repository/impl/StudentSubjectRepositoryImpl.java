@@ -121,20 +121,22 @@ public class StudentSubjectRepositoryImpl implements StudentSubjectRepository {
     public StudentSubject getStudentSubjectByStudentAndSubjectId(String studentId, String subjectId) {
         Session s = this.factory.getObject().getCurrentSession();
         StudentSubject studentSubject = new StudentSubject();
-        List<Object[]> objects = new ArrayList<>();
-        Query q = s.createNativeQuery("select distinct student_subject.*\n"
-                + "from student_subject\n"
-                + "where student_subject.student_id = :studentId and student_subject.subject_id = :subjectId");
-        q.setParameter("studentId", studentId);
-        q.setParameter("subjectId", subjectId);
-        
-        objects = q.getResultList();
-        for( int i = 0; i < objects.size(); i++){
-            Subject subject = this.subjectRepository.getSubjectById(objects.get(i)[0].toString());
-            Student student = this.studentRepository.getStudentById(objects.get(i)[1].toString());
-            studentSubject.setStudentId(student);
-            studentSubject.setSubjectId(subject);
+        try {
+
+            Query q = s.createNativeQuery("SELECT DISTINCT student_subject.* " +
+                            "FROM student_subject " +
+                            "WHERE student_subject.student_id = :studentId AND student_subject.subject_id = :subjectId")
+                    .addEntity("student_subject", StudentSubject.class);
+            q.setParameter("studentId", studentId);
+            q.setParameter("subjectId", subjectId);
+
+            studentSubject = (StudentSubject) q.getSingleResult();
+
+
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
         return studentSubject;
     }
 

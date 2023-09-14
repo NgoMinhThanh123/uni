@@ -49,8 +49,8 @@ public class StudentSubject implements Serializable {
     @ManyToOne(optional = false)
     private Subject subjectId;
     
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "studentSubjectId")
-    private Set<Score> scoreSet;
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "studentSubjectId")
+//    private Set<Score> scoreSet;
     
     public StudentSubject() {
     }
@@ -108,13 +108,13 @@ public class StudentSubject implements Serializable {
         return "com.nmt.model.StudentSubject[ id=" + id + " ]";
     }
 
-    @XmlTransient
-    public Set<Score> getScoreSet() {
-        return scoreSet;
-    }
-
-    public void setScoreSet(Set<Score> scoreSet) {
-        this.scoreSet = scoreSet;
-    }
+//    @XmlTransient
+//    public Set<Score> getScoreSet() {
+//        return scoreSet;
+//    }
+//
+//    public void setScoreSet(Set<Score> scoreSet) {
+//        this.scoreSet = scoreSet;
+//    }
     
 }

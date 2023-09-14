@@ -94,6 +94,7 @@ public class Student implements Serializable {
     @OneToOne(optional = false)
     @JsonIgnore
     private User userId;
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "studentId", fetch = FetchType.LAZY)
     private Set<StudentSubject> studentSubjectSet;
 

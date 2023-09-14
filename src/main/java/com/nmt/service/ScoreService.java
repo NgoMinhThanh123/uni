@@ -26,5 +26,5 @@ public interface ScoreService {
     List<StudentScoreDTO> getStudentScores(String lecturerId, String semesterId, String subjectId);
     List<StudentScoreDTO> getListScoresExport(String subjectId, String semesterId);
     boolean deleteScore(int id);
-    Score_ScoreValueDto addScore(Map<String, String> params);
+    List<Score_ScoreValueDto> addScore(List<Map<String, String>> scoreParamsList);
 }
